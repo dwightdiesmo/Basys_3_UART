@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1648343879">
+  <File Type="PA-TCL" Name="UART.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="UART_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="UART_reports.tcl"/>
+  <File Type="RDS-RDS" Name="UART.vds"/>
+  <File Type="RDS-UTIL" Name="UART_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="UART_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="UART.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="UART_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="UART_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/new/Refresh_Counter.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Basys_3_UART_Tx/Basys_3_UART_Tx.srcs/sources_1/new/Refresh_Counter.sv"/>
+        <Attr Name="ImportTime" Val="1645636477"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/UART_Rx.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Basys_3_UART_Rx/Basys_3_UART_Rx.srcs/sources_1/new/UART_Rx.sv"/>
+        <Attr Name="ImportTime" Val="1645642702"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/UART_Tx.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Basys_3_UART_Tx/Basys_3_UART_Tx.srcs/sources_1/new/UART_Tx.sv"/>
+        <Attr Name="ImportTime" Val="1645638344"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/UART.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/Transmitter.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Basys_3_UART_Tx/Basys_3_UART_Tx.srcs/sources_1/new/Transmitter.sv"/>
+        <Attr Name="ImportTime" Val="1645637415"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/Receiver.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Basys_3_UART_Rx/Basys_3_UART_Rx.srcs/sources_1/new/Receiver.sv"/>
+        <Attr Name="ImportTime" Val="1645642048"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="UART"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/Basys_3_Master.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>
